@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
     <title>Datametas2026 - Transformación de Hábitos</title>
     
     <!-- Fonts -->
@@ -64,19 +64,10 @@
     <style>
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        body { 
-            min-height: 100dvh; 
-            background-color: #f8fafc; 
-            overscroll-behavior-y: none; /* Prevents pull-to-refresh on mobile */
-            -webkit-tap-highlight-color: transparent; /* Removes gray tap highlight */
-        }
+        body { min-height: 100dvh; background-color: #f8fafc; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
-        
-        /* Safe Area Utilities */
-        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 20px); }
-        .pt-safe { padding-top: env(safe-area-inset-top, 20px); }
-        .bottom-safe { bottom: env(safe-area-inset-bottom, 0px); }
+        .pb-safe-area { padding-bottom: env(safe-area-inset-bottom, 20px); }
     </style>
 <script type="importmap">
 {
@@ -89,7 +80,7 @@
 }
 </script>
 </head>
-<body class="font-display bg-background-light text-slate-900 antialiased selection:bg-brand-primary selection:text-white overflow-hidden">
+<body class="font-display bg-background-light text-slate-900 antialiased selection:bg-brand-primary selection:text-white">
     <div id="root"></div>
 </body>
 </html>
